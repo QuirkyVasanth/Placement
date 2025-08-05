@@ -1,0 +1,67 @@
+               ******************JAVA************************* 
+
+*****Expansion*****
+jdk--Java Development Kit
+jre--Java Runtime Environment
+jvm--Java Virtual Machine
+jit--Just in Time Compiler
+
+
+****Operating System(OS)****
+windows
+Mac OS 
+Ubuntu
+Unix 
+Linux 
+kali Linux
+
+
+****Languages****
+C--Mostly C language is used to communicate directly with hardwares.Ex-Embedded Systems
+C++--Every Microsoft windows OS contains C++ by default,to communicate with hardwares by UserInterface
+     Ex--Windows XP, Windows 7, Windows 10
+java--Used for creating desktop application and web applications too.
+
+
+
+      
+****Description****
+
+ **bytecode****     --made of numbers+symbols+alphabets. Ex--1f2$%^
+ **binarycode**     --made of only 0s and 1s. Ex--01001
+
+
+JIT  --Located inside JVM,make compilation faster when it found lines are repeated.
+Jre  --It provides Environment to run the code,and it also contains libraries like java.util,java.lang etc
+JVM  --converts byte to binary code.
+Compiler--Converts source code to byte code.
+Debugger--Identify the Errors and Rectify it.
+
+
+What is JDK?
+Expansion of JDK is Java Development Kit, which consists of JRE and JVM.
+Especially JDK contains Compiler and Debugger.
+
+
+What is JRE?
+Expansion of JRE is Java Runtime Environment.JRE consists of JVM.
+It provides the environment to run code.
+JRE contains Libraries like Java.util, Java.lang etc
+
+
+What is JVM?
+Expansion of JVM is Java Virtual Machine.
+Which converts byte code to binary code.
+JVM Contains,
+            Class loader        --Loads the required  class for running the program.
+            ByteCode verifier   --verifies the Bytecode is valid or not.
+            Method Areas        --consists of heap,stack,pc registers. which is used to store  
+                                  variables,objects etc. 
+            GarbageCollector    --Which cleans or free up memory by removing the unused object.
+
+ 
+	
+
+
+
+
