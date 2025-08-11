@@ -1,0 +1,198 @@
+           ***********Day 2**************
+
+***Creating a project***:
+
+1)Open Eclipse-> File New-> Other-> click java project 
+  Name the project-> click Finish.
+  
+  *Rightclick on src folder 
+  *create a class 
+  *The Class name should start with Capital letter 
+  *click finish.
+
+ 
+***Declaring a Variable***
+
+-> int a; ---------variable declaration
+-> int b=10;-------variable initialization 
+
+
+
+***DATA TYPES***
+
+  Data Type	Size	                Range
+->byte	     1 byte (8 bits)	     -128 to 127 
+->short	     2 bytes (16 bits)	     -32,768 to 32,767 
+->int	     4 bytes (32 bits)	     –2³¹ to 2³¹–1
+->long	     8 bytes (64 bits)	     –2⁶³ to 2⁶³–1
+->float	     4 bytes	              7 decimal digits of precision
+->double     8 bytes	             15–16 decimal digits of precision
+->char	     2 bytes	             0 to 65,535 (Unicode characters)  
+
+
+
+
+
+****Data Types Divided into Two Categories.
+
+*****Primitive*****
+     byte,short,int,long,float,double,boolean,char.
+
+******Non-Primitive*****
+      Arrays,Objects,String,class.
+
+
+
+
+
+***Declaring a method***
+
+public static void demo()--------->method Declaration
+{                        ----------|  
+                         ----------|-->method Definition
+}                        ----------|
+
+public--->Access Specifier-->it is compulsory when u declare a method,if u didn't give anything it is considered as default access specifier.
+
+static--->Keyword--->if u need to access a method without any object ,declare as static,it will create a single memory allocation.
+
+void---->return type-->void doesn't return anything,except that you can give any other datatype ex-int or char or double etc.
+
+demo()---->method name.         
+
+******************************************************  
+
+
+          
+*****Example*****
+class Demo
+{
+
+  int a=10; -------------------->Global Variable /instance Variable
+
+public static void sample()
+{
+int a=89;--------------------->Local variable
+} 
+
+}
+
+********************************************************
+-->when u declare a variable inside the class is known as global/instance variable.
+-->when u declare a variable inside the method is known as local variable.
+********************************************************
+
+
+
+
+******How to access the variable if it is global?********
+-->first see if it is static ,
+   ex-  static int a=10;
+   if u see the example above has static near variable declaration. so you can directly access anywhere .
+
+
+
+-->if it doesn't have static keyword near variable,
+   ex- int a=90;
+   if u see the example above doesn't have any static keyword ,so definitely you need to access the variable by creating an Object
+         
+   ex--
+      class Demo
+      {       
+        int a=78;------------global variable without static keyword
+       public static void main(String args[]) 
+       {
+         Demo d=new Demo();-------------->Object Creation
+         System.out.println(d.a);------------->Accessing global variable through Object.
+       }
+     }
+
+******************************
+
+
+
+******How to access the variable if it is local?*******
+-->when u declare a variable inside a method then u have access to it within that method scope alone.
+
+       Example--
+
+       Class Add
+       {
+         public static void add()
+         {
+          int num=34; -------------------->Local variable accessed only within method scope
+         }     
+
+          public static void main(String args[])
+          {
+            System.out.println(num);-------------------->Throw error 
+          }
+      }
+        
+****************************************************************
+What is return type what is the use of it?
+
+-->Basically every method should have a return type compulsory.
+-->if u see any function with void ,then place where void is located called return type.
+-->If u declare a return type void, it means it doesn't return anything, or doesn't give back  
+   anything when its called.
+
+   Example:-
+   public class Sample
+   {
+      
+    public static void RTR()
+    {
+    
+    };
+
+    public static void main(String args[])
+    {
+    System.out.println(RTR());--------->Doesnt Return Anything 
+    }
+  }
+     
+*********************************************************
+ Instead of Void ,what we can give?
+-->All data types,and also you can give class,and Array type as return type.
+   
+   Example-1:-
+   public class Sample
+   {
+      
+    public static int RTR()------> here we mentioned int as return type so we should return a                                    
+                                   integer compulsorily.
+    {
+        return 12;
+    };
+
+    public static void main(String args[])
+    {
+    System.out.println(RTR());--------->It will print 12 as Output.  
+    }
+  }
+
+
+   
+   Example-2:-
+   public class Sample
+   {
+      
+    public static String RTR()------> here we mentioned String as return type so we should return a                                    
+                                   String data compulsorily at the end.
+    {
+        return "abc";
+    };
+
+    public static void main(String args[])
+    {
+    System.out.println(RTR());--------->It will print abc as Output.  
+    }
+  }
+
+********************************************************************
+                         
+           *--------*----------*  END   *--------*----------*
+
+
+
